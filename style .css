@@ -6,15 +6,16 @@
 
 /*Custom properties*/
 :root{
-	--ff-primary:'Poppins Semi-bold 600', sans-serif;		/*fonts*/
+	--ff-primary:'Italiana', serif;		/*fonts*/
 	--ff-secondary:'Garamond';
+	--ff-accent:'Poppins Semi-bold 600', sans-serif;	
 
 	--fw-reg: 300;
 	--fw-bold: 900;
 
-	--clr-light: rgb(255, 255, 255);					/*colours*/
-	--clr-dark: #4b2a00;
-	--clr-accent: #fcdaae;
+	--clr-light: #fde58b;					/*colours*/
+	--clr-dark: #303C6C;
+	--clr-accent: #f5966b;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -72,6 +73,7 @@ strong{ font-weight: var(--fw-bold);}
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 2px;
+	font-family: var(--ff-accent);
 	font-weight: var(--fw-bold);
 	transition: transform 200ms ease-in-out;
 }
@@ -190,6 +192,7 @@ nav{display:none;}
 .edu{												/*stops content sentences from being too spread out in a small screen*/
 	max-width: 450px;
 	margin: 0 auto;
+	font-family: var(--ff-accent);
 }
 
 @media (min-width: 800px){
@@ -207,10 +210,14 @@ nav{display:none;}
 .about-me{
 	max-width: 1000px;
 	margin: 0 auto;
+	
 }
 
 .about-me__img{
 	box-shadow: var(--bs);
+}
+.about-me__body{
+	font-family: var(--ff-accent);
 }
 
 @media(min-width: 600px){
@@ -332,4 +339,9 @@ nav{display:none;}
 .mail{
 	position: relative;
 	top: 0.2rem;
+}
+.footer__subtitle--foot{
+	font-family: var(--ff-secondary);
+	font-size:var(--fs-h3);
+	color: rgb(168, 168, 168);
 }

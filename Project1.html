@@ -40,8 +40,9 @@
         <div class="about"> <!--Creating Column-->
             <div class="one">
                 <h3>The BuzzBand</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p> The Buzzband is a wearable device designed to alert animals of your presence by radiating sound frequencies, to avoid unexpected encounters. Sound waves are emitted constantly at a frequency of 22kHz, over a 50 yard distance. The prototype will not cause sound pollution to the hiker, thus not hindering the outdoor experience.
                 </p>
+                <p>The device will be composed of features such as a 10-14 hour battery life, an adjustable band, and an emergency call button, and an LED system to communicate with the user.</p>
             </div>
 
         </div>
@@ -54,12 +55,18 @@
         </header>
         <p class="section__subtitle section__subtitle--work">And its Hardware Functions</p>
         <div class="it-work__body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p id="one_text">The breadboard design consists of a voltage converter to convert 12V from the wall input to 5V. It uses a non-isolated DC switching regulator and two capacitors. 
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p id="two_text">To control the LED system, the PIC18F27/47/57Q43 microcontroller is used to communicate with its registers using the C programming language, and ensure that the green LED turns on when the 22 kHz is being outputted, and the red LED turns on when it’s not working successfully. Two resistors are connected between the LEDs and the microcontroller’s registers, in order to limit the current through each LED to prevent from burning them out.
             </p>
+            <p id="three_text">The volume of the output is controlled by a potentiometer and the TL4112 OpAmp. The potentiometer provides a range of resistances from 0-200 kΩ.
+            </p>
+            <p id="four_text">The output from the potentiometer is safely connected to the input of the speaker.
+            </p>
+            <p>The buzzband's digital prototype is illustrated below, and its physical prototype is located at the right.</p>
         </div>
-        
         <img src="C:\Users\berse\Pictures\Website\BuzzBand.jpg" alt="Physical Prototype of the Buzzband" class="it-work__img">
+
+        <img src="C:\Users\berse\Pictures\Website\Project1.2.jpg" alt="Physical Prototype of the Buzzband" class="it-work__img2">
     </section>
 </html>
