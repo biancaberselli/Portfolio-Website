@@ -158,14 +158,15 @@ nav{display:none;}
 		padding-left: 305px;
 		position: relative;
 		left: -1.5em;
-		width: calc(100% + 1.5em);
+		width: calc(100%);
+		overflow-x:hidden;
 	}
 }
 
 /* My Services section*/
 .my-education{
 	background-color: var(--clr-dark);
-	background-image: url(../My\ Pictures/Website/Background2.jpg);
+	background-image: url(./Images/Background2.jpg);
 	background-size: cover;								/*prevent background from repeating itself*/
 	background-blend-mode: multiply;
 	color: var(--clr-light);
@@ -243,6 +244,7 @@ nav{display:none;}
 		width: calc(100% + 2em);
 		padding-left: 1em;
 		padding-right: calc(200px + 4em);
+		overflow-x:hidden;
 	}
 	.about-me__img{
 		grid-area: img;
